@@ -3,6 +3,8 @@
 * Predicting whether or not rain will occur tomorrow. Dataset acquired from  [Rain in Australia | Kaggle](https://www.kaggle.com/jsphyg/weather-dataset-rattle-package?rvi=1) 
 * Drop columns with high missing values percentage, and fill the rest of the missing values with median
 * Replace outliers with upper and lower fence (IQR method)
+* Normalize features
+* Feature Selection
 * Sampled the data using 3 techniques: Undersampling, Oversampling, SMOTE Oversampling
 * Trained model with 4 different algorithms and compared the result for each sampling technique
 * No hyperparameter tuning (because the models performances did not improve significantly, and the original performances are already good enough)
@@ -29,7 +31,11 @@ Features which correlation with the target column <0.1 will be dropped. We also 
 ![alt text](https://github.com/sleepyallover/Rain-prediction/blob/main/target.png "target")<br>
 We're going to compare 3 sampling techniques : Undersampling, Oversampling, SMOTE Oversampling.
 
+We should also normalize data using MinMaxScaler()
+
 ## Modeling  & Evaluation
+
+After the dataset is preprocessed, then it is ready to enter the modeling stage.
 We use 4 algorithm : Logistic Regression, KNN, Random Forest, and XGBoost. The models are evaluated on AUC score.
 
 | Model | Sampling | AUC Score |
