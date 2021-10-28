@@ -47,4 +47,4 @@ We use 4 algorithm : Logistic Regression, KNN, Random Forest, and XGBoost. The m
 
 ## Conclusion
 * The recommended model for this project is Random Forest with oversampling technique with <strong>AUC score of 98%</strong>.
-* The performance of the model is good enought to predict rain occurence tomorrow, hence fulfilling our objective.
+* The performance of the model is good enough to predict rain occurence tomorrow, hence fulfilling our objective.
